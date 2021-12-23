@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Pixel Art</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Pixel art</h1>
+  </header>
+  <section id="color-palette">
+    <div class="color preto selected" style="background-color: black;"></div>
+    <div class="color vermelho" style="background-color: red;"></div>
+    <div class="color azul" style="background-color: blue;"></div>
+    <div class="color blueviolet" style="background-color: blueviolet;"></div>
+  </section>
+  <section class="tamanhoBoard">
+    <label id="label" for="board-size">Board Size</label><input id="board-size" type="number" min="1" placeholder="Input a value between 5 and 50" style="width: 250px;">
+    <button id="generate-board">VQV!</button>
+  </section>
+  <button id="clear-board" type="button"></button>
+  <button id="novasCores" type="button">New Colors</button>
+  <button id="restart" type="button">Restart Page</button>
+  <section id="pixel-board" ></section>
+  <script src="script.js"></script>
+</body>
+</html>
